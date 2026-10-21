@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Catalog</title>
+  <style>
+    body { font-family: sans-serif; background: #222; color: #fff; margin: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; }
+    .card { background: #333; padding: 10px; border-radius: 8px; text-align: center; }
+    img { width: 100%; height: 180px; object-fit: cover; border-radius: 4px; }
+    p { margin: 8px 0 0; font-size: 14px; font-weight: bold; color: #f0c080; }
+  </style>
+</head>
+<body>
+  <h1>Skincare Suite Images (1 to 75)</h1>
+  <div class="grid" id="gallery"></div>
+  <script>
+    const gallery = document.getElementById('gallery');
+    for (let i = 1; i <= 75; i++) {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<img src="images/image-${i}.png" alt="image-${i}" loading="lazy"><p>image-${i}.png</p>`;
+      gallery.appendChild(card);
+    }
+  </script>
+</body>
+</html>
