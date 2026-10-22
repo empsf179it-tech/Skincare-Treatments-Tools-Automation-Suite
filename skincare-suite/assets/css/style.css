@@ -2773,6 +2773,82 @@ input[type="date"].form-control {
   }
 }
 
+/* ==========================================================================
+   DROP TO TOP / SCROLL TO TOP BUTTON (With Hover Effect)
+   ========================================================================== */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary-plum);
+  color: var(--secondary-ivory);
+  border: 1.5px solid var(--accent-champagne);
+  box-shadow: 0 4px 18px rgba(36, 27, 47, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 990;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s, background-color 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.scroll-to-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-to-top-btn svg {
+  transition: transform 0.25s ease;
+}
+
+/* Hover Effect: elevation lift, champagne glow & color shift, arrow icon float */
+.scroll-to-top-btn:hover {
+  transform: translateY(-5px) scale(1.08);
+  background: var(--accent-champagne);
+  color: var(--primary-plum-deep);
+  border-color: var(--accent-champagne);
+  box-shadow: 0 10px 24px rgba(199, 166, 106, 0.45);
+}
+
+.scroll-to-top-btn:hover svg {
+  transform: translateY(-3px);
+}
+
+.scroll-to-top-btn:active {
+  transform: translateY(-1px) scale(0.96);
+}
+
+[data-theme="dark"] .scroll-to-top-btn {
+  background: var(--primary-plum-light);
+  color: var(--accent-champagne);
+  border-color: var(--accent-champagne);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .scroll-to-top-btn:hover {
+  background: var(--accent-champagne);
+  color: var(--primary-plum-deep);
+  box-shadow: 0 10px 24px rgba(199, 166, 106, 0.5);
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* --- Accessibility & Reduced Motion --- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

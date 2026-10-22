@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAuthForms();
   initDashboard();
   initScrollReveal();
+  initScrollToTop();
 });
 
 /* ==========================================================================
@@ -853,4 +854,43 @@ function initScrollReveal() {
   }, { threshold: 0.12 });
 
   revealElements.forEach(el => observer.observe(el));
+}
+
+/* ==========================================================================
+   13. DROP TO TOP / SCROLL TO TOP BUTTON
+   ========================================================================== */
+function initScrollToTop() {
+  let btn = document.querySelector('.js-scroll-to-top');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'scroll-to-top-btn js-scroll-to-top';
+    btn.id = 'scrollToTopBtn';
+    btn.setAttribute('aria-label', 'Drop to top');
+    btn.setAttribute('title', 'Drop to top');
+    btn.innerHTML = `
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    `;
+    document.body.appendChild(btn);
+  }
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+  };
+
+  window.addEventListener('scroll', toggleVisibility, { passive: true });
+  toggleVisibility();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
