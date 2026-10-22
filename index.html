@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Treatments Tools & Automation Suite | Smarter Skincare</title>
+  <meta name="description" content="Discover professional skincare treatments, medical-grade beauty tools, and workflow automation designed for modern dermatological and aesthetic practices.">
+  <link rel="canonical" href="https://empsf179it-tech.github.io/Skincare-Treatments-Tools-Automation-Suite/">
+  <meta property="og:title" content="Skincare Treatments Tools & Automation Suite">
+  <meta property="og:description" content="Smarter Skincare. Advanced Treatments. Seamless Workflows.">
+  <meta property="og:image" content="assets/images/image-1.png">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL STICKY HEADER (Rule 9) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <a href="index.html" class="navbar-brand" aria-label="Skincare Suite Home">
+        <img src="assets/images/logo.svg" alt="Skincare Suite Logo" class="brand-logo-svg" width="36" height="36">
+        <span>Skincare Suite</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="tools.html" class="nav-link">Skincare Tools</a></li>
+          <li><a href="automation.html" class="nav-link">Automation</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-actions">
+        <button type="button" class="action-icon-btn js-theme-toggle" aria-label="Toggle light and dark mode" id="navThemeBtn">
+          <span class="js-theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+
+        <button type="button" class="btn btn-primary" data-open-enquiry data-enquiry-type="Treatment Information" id="navCtaBtn">
+          Explore Treatments
+        </button>
+
+        <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" id="hamburgerBtn">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER (Rule 10) -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.svg" alt="Skincare Suite Logo" class="brand-logo-svg" width="32" height="32">
+        <span>Skincare Suite</span>
+      </a>
+      <button type="button" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="tools.html" class="nav-link">Skincare Tools</a></li>
+      <li><a href="automation.html" class="nav-link">Treatment Automation</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="drawer-actions">
+      <div class="drawer-controls-row">
+        <button type="button" class="action-icon-btn js-theme-toggle" aria-label="Toggle light/dark theme">
+          <span class="js-theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+      </div>
+
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-open-enquiry data-enquiry-type="Treatment Information">
+        Explore Treatments
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT: EXACTLY 6 CONTENT SECTIONS (Rule 16) -->
+  <main id="mainContent">
+
+    <!-- HOME — SECTION 01: CINEMATIC HERO (Images: image-1.png & image-2.png) -->
+    <section class="hero-cinematic" id="heroSection" aria-labelledby="heroHeadline">
+      <div class="container hero-cinematic-grid">
+        <div class="hero-cinematic-content">
+          <span class="eyebrow">Advanced Aesthetic Suite</span>
+          <h1 id="heroHeadline" class="display-title">
+            ADVANCED SKINCARE. <span class="editorial-title">BEAUTIFULLY</span> SIMPLIFIED.
+          </h1>
+          <p style="margin-block: 1.5rem 2.25rem; font-size: 1.15rem; max-width: 580px;">
+            Discover professional skincare treatments, innovative beauty tools, and smarter workflows designed for modern skincare experiences.
+          </p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" data-open-enquiry data-enquiry-type="Treatment Information" style="min-width: 220px;">
+              EXPLORE TREATMENTS
+            </button>
+            <a href="tools.html" class="btn btn-secondary" style="min-width: 220px;">
+              DISCOVER THE TECHNOLOGY
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-cinematic-visual">
+          <div class="hero-main-img-box">
+            <img src="assets/images/image-1.png" alt="Clinician performing professional HydraFacial vortex treatment in modern clinic" width="800" height="600" fetchpriority="high">
+          </div>
+          <!-- Layered floating interface detail with image-2.png -->
+          <div class="hero-float-panel">
+            <div class="float-thumb">
+              <img src="assets/images/image-2.png" alt="HydraSkin modern aesthetic console treatment tip" width="58" height="58">
+            </div>
+            <div class="float-info">
+              <h4>HydraSkin Elite Console</h4>
+              <p>Active Vortex Infusion Mode • 98% Efficiency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 02: TREATMENT DISCOVERY (Images: image-6.png, image-7.png, image-11.png, image-13.png) -->
+    <section class="section-pad" id="treatmentDiscovery" aria-labelledby="discoveryTitle" style="background-color: var(--bg-card-alt);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">Clinical Precision</span>
+          <h2 id="discoveryTitle">YOUR SKINCARE JOURNEY, REIMAGINED.</h2>
+          <p>Explore specialized facial protocols combining targeted dermatological formulations with professional precision hardware.</p>
+        </div>
+
+        <div class="treatment-discovery-layout js-treatment-selector">
+          <!-- Interactive Treatment Selector Navigation -->
+          <div class="treatment-nav-list" role="tablist" aria-label="Treatment Categories">
+            <button type="button" class="treatment-nav-item is-active" role="tab" aria-selected="true"
+                    data-title="Laser Facial Rejuvenation"
+                    data-category="Facial Rejuvenation"
+                    data-desc="Non-ablative fractional energy delivers controlled micro-thermal zones, stimulating deep collagen matrix remodeling while preserving epidermal integrity."
+                    data-workflow="01 Pre-scan Analysis • 02 Cooling Shield Application • 03 Fractional Energy Pass • 04 Soothing Botanical Barrier"
+                    data-img="assets/images/image-6.png">
+              <span>01 — Facial Rejuvenation</span>
+              <span class="badge">Laser</span>
+            </button>
+
+            <button type="button" class="treatment-nav-item" role="tab" aria-selected="false"
+                    data-title="LED Bio-Phototherapy Mask"
+                    data-category="LED Light Therapy"
+                    data-desc="Multi-spectral 633nm red and 415nm blue light waves energize cellular ATP synthesis, calming inflammation and accelerating dermal recovery."
+                    data-workflow="01 Surface Cleansing • 02 Multi-Spectrum LED Calibration • 03 20-min Phototherapy • 04 Barrier Hydration"
+                    data-img="assets/images/image-7.png">
+              <span>02 — LED Light Therapy</span>
+              <span class="badge">Phototherapy</span>
+            </button>
+
+            <button type="button" class="treatment-nav-item" role="tab" aria-selected="false"
+                    data-title="Clinical Acid Exfoliation Peel"
+                    data-category="Deep Cleansing"
+                    data-desc="Precision buffered alpha and beta hydroxy acid brush application dissolve dead cellular adhesion, refining pores and restoring luminous skin tone."
+                    data-workflow="01 pH Balancing Prep • 02 Fan Brush Acid Layering • 03 Neutralizing Infusion • 04 Hyaluronic Sealing"
+                    data-img="assets/images/image-11.png">
+              <span>03 — Deep Cleansing</span>
+              <span class="badge">Chemical Exfoliation</span>
+            </button>
+
+            <button type="button" class="treatment-nav-item" role="tab" aria-selected="false"
+                    data-title="Hyperbaric OxyCryo Infusion"
+                    data-category="Hydration Treatments"
+                    data-desc="Medical-grade pressurized 98% pure oxygen nebulizes low-molecular hyaluronic acid directly into epidermal layers for instant plumpness and barrier replenishment."
+                    data-workflow="01 Sonic Deincrustation • 02 Oxygen Mist Nebulization • 03 Cryo-probe Micro-cooling • 04 Moisture Locking"
+                    data-img="assets/images/image-13.png">
+              <span>04 — Hydration Treatments</span>
+              <span class="badge">Oxygen Infusion</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Display Panel -->
+          <div class="treatment-preview-panel">
+            <div class="treatment-preview-img">
+              <img src="assets/images/image-6.png" alt="Laser Facial Rejuvenation treatment procedure" class="js-treatment-img" width="700" height="440" loading="lazy">
+            </div>
+            <div class="treatment-preview-content">
+              <div class="card-meta">
+                <span class="badge js-treatment-category">Facial Rejuvenation</span>
+                <span>Standard Protocol • 60 Mins</span>
+              </div>
+              <h3 class="js-treatment-title" style="margin-bottom: 0.75rem;">Laser Facial Rejuvenation</h3>
+              <p class="js-treatment-desc" style="margin-bottom: 1rem;">
+                Non-ablative fractional energy delivers controlled micro-thermal zones, stimulating deep collagen matrix remodeling while preserving epidermal integrity.
+              </p>
+              <div class="treatment-workflow-box" style="background: var(--bg-card-alt); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 0.85rem 1rem; margin-bottom: 1.5rem;">
+                <span class="workflow-sequence-label" style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent-champagne); display: block; margin-bottom: 0.25rem;">Standard Workflow Sequence:</span>
+                <span class="js-treatment-workflow" style="font-size: 0.875rem; color: var(--text-main);">01 Pre-scan Analysis • 02 Cooling Shield Application • 03 Fractional Energy Pass • 04 Soothing Botanical Barrier</span>
+              </div>
+              <button type="button" class="btn btn-primary js-treatment-cta" data-open-enquiry data-enquiry-type="Treatment Information" data-enquiry-item="Laser Facial Rejuvenation">
+                EXPLORE TREATMENT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 03: PROFESSIONAL SKINCARE TOOLS (Images: image-4.png, image-19.png, image-20.png) -->
+    <!-- 3-card rule: 3 cols on desktop, 2 in row 1 + 1 centered below at 768px-1024px, 1 col mobile -->
+    <section class="section-pad" id="toolsShowcase" aria-labelledby="toolsTitle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">Hardware Innovation</span>
+          <h2 id="toolsTitle">PRECISION TOOLS. ELEVATED EXPERIENCES.</h2>
+          <p>Engineered for high-performing aesthetic clinics, combining intuitive tactile ergonomics with dermatological precision.</p>
+        </div>
+
+        <div class="grid-3-cards">
+          <!-- Card 1: image-4.png (MedDerm 3D multi-spectral facial scanner) -->
+          <article class="premium-card">
+            <div class="card-media">
+              <img src="assets/images/image-4.png" alt="MedDerm 3D multi-spectral facial scanner console" width="600" height="420" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="badge">Skin Analysis</span>
+                <span>RGB & UV Optics</span>
+              </div>
+              <h3>MedDerm 3D Multi-Spectral Scanner</h3>
+              <p>Captures subcutaneous pore congestion, pigment melanin distribution, and hydration gradients in 15 seconds.</p>
+              <div class="card-footer">
+                <span style="font-weight: 700; font-size: 0.85rem; color: var(--text-muted);">Calibrated Diagnostics</span>
+                <a href="tools.html#dermaview" class="btn btn-secondary" style="min-height: 38px; padding: 0.4rem 1rem; font-size: 0.8rem;">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: image-19.png (Multifunctional facial station with LED mask & chambers S1-S4) -->
+          <article class="premium-card">
+            <div class="card-media">
+              <img src="assets/images/image-19.png" alt="Multifunctional facial treatment station with quadruple solution chambers" width="600" height="420" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="badge">Facial Station</span>
+                <span>Quadruple Infusion</span>
+              </div>
+              <h3>OmniStation S4 Aesthetic Tower</h3>
+              <p>Seamlessly integrates vortex extraction, ultrasonic scrubber blades, and galvanic peptide infusion in a single bay console.</p>
+              <div class="card-footer">
+                <span style="font-weight: 700; font-size: 0.85rem; color: var(--text-muted);">Clinic Workstation</span>
+                <a href="tools.html#hydroflow" class="btn btn-secondary" style="min-height: 38px; padding: 0.4rem 1rem; font-size: 0.8rem;">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: image-20.png (Zemits Verstand HD Pro console) - Centered below on tablet (Rule 14) -->
+          <article class="premium-card">
+            <div class="card-media">
+              <img src="assets/images/image-20.png" alt="Zemits Verstand HD Pro clinical aesthetic console" width="600" height="420" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="badge">Skin Conditioning</span>
+                <span>Dual Cryo-RF</span>
+              </div>
+              <h3>Verstand HD Pro Clinical Console</h3>
+              <p>Features dynamic temperature regulation from -5°C cryotherapy to 42°C radiofrequency for non-invasive sculpting.</p>
+              <div class="card-footer">
+                <span style="font-weight: 700; font-size: 0.85rem; color: var(--text-muted);">Touchscreen Control</span>
+                <a href="tools.html#thermalift" class="btn btn-secondary" style="min-height: 38px; padding: 0.4rem 1rem; font-size: 0.8rem;">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="tools.html" class="btn btn-primary" style="min-width: 240px;">
+            EXPLORE SKINCARE TOOLS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 04: SMART WORKFLOW AUTOMATION (Image: image-66.png) -->
+    <section class="section-pad section-dark js-workflow-section" id="workflowSection" aria-labelledby="workflowTitle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">Operational Excellence</span>
+          <h2 id="workflowTitle">LESS MANUAL WORK. MORE PERSONALIZED CARE.</h2>
+          <p>Digitize and coordinate every patient touchpoint—from pre-treatment medical history forms to automated follow-up homecare guides.</p>
+        </div>
+
+        <!-- 5-Step Connected Timeline -->
+        <div class="workflow-stepper" role="tablist" aria-label="Workflow Stages">
+          <div class="workflow-step is-active" role="tab" tabindex="0"
+               data-title="01 — Digital Client Consultation"
+               data-desc="Intelligent intake forms collect skin sensitivities, active ingredients, and clinical goals before the client steps into the treatment room."
+               data-img="assets/images/image-66.png"
+               data-tasks="Skin Sensitivity Questionnaire;Medical Contraindication Check;Prior Aesthetic Treatment Log">
+            <div class="step-bubble">01</div>
+            <div>
+              <div class="step-label">Consultation</div>
+              <div class="step-desc">Pre-Visit Intake</div>
+            </div>
+          </div>
+
+          <div class="workflow-step" role="tab" tabindex="0"
+               data-title="02 — Multi-Spectral Skin Profile"
+               data-desc="Diagnostic data imports directly into the client record, creating an objective baseline to track melanin, moisture, and pore depth."
+               data-img="assets/images/image-66.png"
+               data-tasks="Multi-Spectral Baseline Capture;Moisture Level Reading;Melanin Mapping Analysis">
+            <div class="step-bubble">02</div>
+            <div>
+              <div class="step-label">Skin Profile</div>
+              <div class="step-desc">Diagnostic Scan</div>
+            </div>
+          </div>
+
+          <div class="workflow-step" role="tab" tabindex="0"
+               data-title="03 — Treatment Protocol Formulation"
+               data-desc="Clinicians configure customized solution sequences, device power calibrations, and serum layering guidelines for the visit."
+               data-img="assets/images/image-66.png"
+               data-tasks="Exfoliation Intensity Selection;Serum Infusion Ratios;Active Device Settings">
+            <div class="step-bubble">03</div>
+            <div>
+              <div class="step-label">Treatment Plan</div>
+              <div class="step-desc">Custom Protocols</div>
+            </div>
+          </div>
+
+          <div class="workflow-step" role="tab" tabindex="0"
+               data-title="04 — Synchronized Bay Scheduling"
+               data-desc="Smart allocation automatically aligns treatment room availability, equipment sanitization windows, and therapist schedules."
+               data-img="assets/images/image-66.png"
+               data-tasks="Treatment Room Booking;Sterilization Interval Lock;Aesthetician Assignment">
+            <div class="step-bubble">04</div>
+            <div>
+              <div class="step-label">Scheduling</div>
+              <div class="step-desc">Bay Allocation</div>
+            </div>
+          </div>
+
+          <div class="workflow-step" role="tab" tabindex="0"
+               data-title="05 — Automated Follow-up Reminders"
+               data-desc="Automated post-treatment care routines and touchpoint reminders ensure optimal recovery and seamless appointment rebooking."
+               data-img="assets/images/image-66.png"
+               data-tasks="Post-Care Routine Email;Day-3 Recovery Check-in;4-Week Rebooking Link">
+            <div class="step-bubble">05</div>
+            <div>
+              <div class="step-label">Follow-Up</div>
+              <div class="step-desc">Care Reminders</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workflow Display Preview Box with image-66.png -->
+        <div class="workflow-display-box" style="margin-top: 3.5rem;">
+          <div>
+            <span class="badge" style="margin-bottom: 0.75rem;">Interactive System Demo</span>
+            <h3 class="js-workflow-title" style="margin-bottom: 0.75rem; color: var(--text-main);">01 — Digital Client Consultation</h3>
+            <p class="js-workflow-desc" style="margin-bottom: 1.5rem; color: var(--text-muted);">
+              Intelligent intake forms collect skin sensitivities, active ingredients, and clinical goals before the client steps into the treatment room.
+            </p>
+
+            <div style="margin-bottom: 1.5rem;">
+              <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--accent-champagne); display: block; margin-bottom: 0.5rem;">
+                Step Verification Checklist (Demo):
+              </span>
+              <div class="js-workflow-tasks" style="color: var(--text-main);">
+                <label style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; cursor: pointer; font-size: 0.9rem;">
+                  <input type="checkbox" class="js-workflow-chk" checked style="accent-color: var(--accent-champagne); width: 18px; height: 18px;">
+                  <span>Skin Sensitivity Questionnaire</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; cursor: pointer; font-size: 0.9rem;">
+                  <input type="checkbox" class="js-workflow-chk" style="accent-color: var(--accent-champagne); width: 18px; height: 18px;">
+                  <span>Medical Contraindication Check</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; cursor: pointer; font-size: 0.9rem;">
+                  <input type="checkbox" class="js-workflow-chk" style="accent-color: var(--accent-champagne); width: 18px; height: 18px;">
+                  <span>Prior Aesthetic Treatment Log</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Progress bar -->
+            <div style="background: rgba(36, 27, 47, 0.1); border-radius: var(--radius-pill); height: 8px; width: 100%; overflow: hidden; margin-bottom: 0.75rem;">
+              <div class="js-workflow-progress-bar" style="background: var(--accent-champagne); height: 100%; width: 33%; transition: width 0.3s ease;"></div>
+            </div>
+            <div class="js-workflow-progress-text" style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 1.5rem;">
+              33% Workflow Protocol Ready
+            </div>
+
+            <a href="automation.html" class="btn btn-primary" style="min-width: 200px;">
+              EXPLORE AUTOMATION
+            </a>
+          </div>
+
+          <div class="workflow-display-img">
+            <img src="assets/images/image-66.png" alt="Romy Paris smart skincare formulating hardware and digital companion app" class="js-workflow-img" width="600" height="450" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 05: THE DIGITAL SKINCARE STUDIO (Images: image-36.png & image-61.png) -->
+    <section class="section-pad" id="studioPreview" aria-labelledby="studioTitle">
+      <div class="container grid-editorial">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--border-champagne); aspect-ratio: 16/10;">
+            <img src="assets/images/image-36.png" alt="3D facial scan digital interface and clinical workflow diagnostic monitor" width="700" height="440" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle); aspect-ratio: 21/9;">
+            <img src="assets/images/image-61.png" alt="Gold aesthetic product collection and dispensary formulations on marble plinth" width="700" height="300" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+
+        <div>
+          <span class="eyebrow">Enterprise Interface</span>
+          <h2 id="studioTitle">YOUR ENTIRE WORKFLOW, IN ONE PLACE.</h2>
+          <p style="margin-block: 1rem 1.5rem;">
+            Designed specifically for aesthetics practitioners, clinical dermatologists, and boutique skincare studios. Eliminate disjointed spreadsheets with a unified operational workspace.
+          </p>
+
+          <div class="studio-metrics-grid">
+            <div class="studio-metric-card">
+              <span class="studio-metric-num">14</span>
+              <span class="studio-metric-label">Today's Appointments</span>
+            </div>
+            <div class="studio-metric-card">
+              <span class="studio-metric-num">100%</span>
+              <span class="studio-metric-label">Sterilization Checklist</span>
+            </div>
+            <div class="studio-metric-card">
+              <span class="studio-metric-num">8</span>
+              <span class="studio-metric-label">Pending Follow-Ups</span>
+            </div>
+            <div class="studio-metric-card">
+              <span class="studio-metric-num">28</span>
+              <span class="studio-metric-label">Active Treatment Plans</span>
+            </div>
+          </div>
+
+          <div class="auth-demo-notice" style="margin-bottom: 2rem;">
+            <strong>Demonstration Workspace Notice:</strong> All metrics, client logs, and device statuses shown in the preview represent illustrative simulation records.
+          </div>
+
+          <a href="automation.html" class="btn btn-primary" style="min-width: 240px;">
+            EXPLORE AUTOMATION SUITE
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 06: PREMIUM FINAL CTA (Image: image-5.png) -->
+    <section class="section-pad section-dark" id="homeFinalCta" aria-labelledby="ctaTitle" style="position: relative; overflow: hidden;">
+      <div class="container grid-editorial-reverse">
+        <div>
+          <span class="eyebrow">Seamless Transformation</span>
+          <h2 id="ctaTitle" style="font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 1.25rem;">
+            MAKE EVERY SKINCARE EXPERIENCE MORE SEAMLESS.
+          </h2>
+          <p style="font-size: 1.1rem; color: rgba(247, 242, 234, 0.8); margin-bottom: 2.25rem;">
+            Explore modern treatment tools, discover smarter workflows, and build a more organized skincare experience.
+          </p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" data-open-enquiry data-enquiry-type="General Enquiry" style="min-width: 200px;">
+              GET STARTED
+            </button>
+            <a href="contact.html" class="btn btn-ghost-dark" style="min-width: 200px;">
+              CONTACT OUR TEAM
+            </a>
+          </div>
+        </div>
+
+        <div style="position: relative; border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border-champagne); box-shadow: var(--shadow-lg); aspect-ratio: 16/11;">
+          <img src="assets/images/image-5.png" alt="Luxury aesthetic clinic treatment suite with ergonomic treatment bed and studio lighting" width="700" height="480" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER (Rules 30, 31) - White background with Midnight Plum text -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Col -->
+        <div>
+          <a href="index.html" class="navbar-brand" style="margin-bottom: 1rem;">
+            <img src="assets/images/logo.svg" alt="Skincare Suite Logo" class="brand-logo-svg" width="32" height="32">
+            <span>Skincare Suite</span>
+          </a>
+          <p style="margin-bottom: 1.5rem;">
+            Smarter skincare. Advanced treatments. Seamless workflows. Connecting clinical devices and digital treatment planning.
+          </p>
+          <span class="badge">
+            Frontend Technology Demo
+          </span>
+        </div>
+
+        <!-- Explore Col -->
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tools.html">Skincare Tools</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform Col -->
+        <div>
+          <h4>Platform</h4>
+          <ul class="footer-nav">
+            <li><a href="automation.html">Treatment Automation</a></li>
+            <li><a href="services.html#treatmentCollection">Treatment Protocols</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Col -->
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-nav">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" data-open-enquiry data-enquiry-type="General Enquiry">Enquiry</a></li>
+            <li><a href="contact.html#faq">FAQ Support</a></li>
+            <li><a href="contact.html#concierge">Clinical Concierge</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Col with SVG Icons & Champagne Lift Hover (Rule 30) -->
+        <div>
+          <h4>Social Media</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Join our global aesthetic practitioner community:</p>
+          <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow us on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow us on X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow us on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Skincare Treatments Tools & Automation Suite. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="contact.html">Privacy Demonstration</a>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL SHARED ENQUIRY MODAL (Rule 25) -->
+  <div class="modal-overlay" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modalTitle">LET’S TALK SKINCARE.</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close enquiry modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="enquiryForm" novalidate>
+          <div class="form-group">
+            <label for="enquiryName" class="form-label">Full Name *</label>
+            <input type="text" id="enquiryName" class="form-control" placeholder="Dr. or Ms./Mr. Full Name" required>
+            <div class="form-feedback"></div>
+          </div>
+
+          <div class="modal-form-grid-2">
+            <div class="form-group">
+              <label for="enquiryEmail" class="form-label">Email Address *</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="hello@example.com" required>
+              <div class="form-feedback"></div>
+            </div>
+            <div class="form-group">
+              <label for="enquiryPhone" class="form-label">Phone (Optional)</label>
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="+1 (000) 000-0000">
+              <div class="form-feedback"></div>
+            </div>
+          </div>
+
+          <div class="modal-form-grid-2">
+            <div class="form-group">
+              <label for="enquiryType" class="form-label">Enquiry Type *</label>
+              <select id="enquiryType" class="form-control form-select" required>
+                <option value="Treatment Information">Treatment Information</option>
+                <option value="Skincare Tools">Skincare Tools</option>
+                <option value="Automation Features">Automation Features</option>
+                <option value="Appointment Workflow">Appointment Workflow</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="General Enquiry">General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="enquiryItem" class="form-label">Treatment or Tool Focus</label>
+              <input type="text" id="enquiryItem" class="form-control" placeholder="Selected service or device">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryDate" class="form-label">Preferred Demo Date (Optional)</label>
+            <input type="date" id="enquiryDate" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryMessage" class="form-label">Message *</label>
+            <textarea id="enquiryMessage" class="form-control" rows="4" placeholder="Tell us about your skincare treatment goals or studio workflow needs..." required></textarea>
+            <div class="form-feedback"></div>
+          </div>
+
+          <div class="modal-footer" style="padding-inline: 0; padding-bottom: 0;">
+            <button type="button" class="btn btn-secondary js-modal-cancel">CANCEL</button>
+            <button type="submit" class="btn btn-primary">SEND ENQUIRY</button>
+          </div>
+        </form>
+
+        <!-- Success Feedback State -->
+        <div class="modal-success-state">
+          <div class="modal-success-icon">✓</div>
+          <h3 style="margin-bottom: 0.75rem;">ENQUIRY PREPARED SUCCESSFULLY</h3>
+          <p style="margin-bottom: 1.5rem;">
+            Thank you. Your enquiry has been prepared in this frontend demonstration.
+          </p>
+          <button type="button" class="btn btn-primary js-modal-success-dismiss">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL SEARCH MODAL (Rule 26) -->
+  <div class="modal-overlay" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+    <div class="modal-container search-modal-container">
+      <div class="modal-header">
+        <h3 id="searchModalTitle">Search Skincare Suite</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close search">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="search-input-wrapper">
+          <span class="search-icon-inside">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="text" id="globalSearchInput" class="search-input" placeholder="Search treatments, tools, workflows, or pages...">
+        </div>
+        <div class="search-results-list" id="searchResultsList">
+          <!-- Dynamic results injected by main.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
