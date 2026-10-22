@@ -2548,6 +2548,18 @@ input[type="date"].form-control {
     width: 100%;
   }
 
+  /* Home page Section 03 (Tools Showcase) card footer: gap between text and button in mobile view */
+  #toolsShowcase .card-footer {
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  #toolsShowcase .card-footer .btn {
+    flex-shrink: 0;
+  }
+
   /* Clinical Bay systems image and text 1-by-1 in mobile view (Tools S2) */
   .clinical-bay-card {
     padding: 1.75rem 1.25rem;
