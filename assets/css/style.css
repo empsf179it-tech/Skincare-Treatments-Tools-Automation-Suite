@@ -2258,12 +2258,14 @@ input[type="date"].form-control {
   color: var(--accent-champagne);
 }
 
+[data-theme="dark"] .social-icon-btn,
 [data-theme="dark"] .site-footer .social-icon-btn {
   background: rgba(247, 242, 234, 0.08);
   color: var(--secondary-ivory);
   border-color: rgba(247, 242, 234, 0.15);
 }
 
+[data-theme="dark"] .social-icon-btn:hover,
 [data-theme="dark"] .site-footer .social-icon-btn:hover {
   background: var(--accent-champagne);
   color: var(--primary-plum-deep);
