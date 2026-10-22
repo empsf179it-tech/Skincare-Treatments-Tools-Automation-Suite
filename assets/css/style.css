@@ -2539,6 +2539,26 @@ input[type="date"].form-control {
     width: calc((100% - 1.75rem) / 2 - 0.2px);
   }
 
+  /* Skincare Tools Explorer filter buttons stacked one-by-one with identical size in mobile view */
+  #toolsExplorer .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+  }
+
+  #toolsExplorer .filter-btn {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
   .grid-3-cards {
     grid-template-columns: 1fr;
   }
